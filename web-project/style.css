@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&disply=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color:#222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color:rgb(41, 40, 40);
+}
+
+h4{
+    font-size: 20px;
+    color:#222;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color:rgb(31, 135, 97);
+    margin: 15px 0 20px 0;
+}
+
+
+button.normal{
+    padding:10px 20px ;
+    color: rgb(239, 229, 229);
+    font-size:13px ;
+    font-weight:600 ;
+    background-color: rgb(9, 56, 40);
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: 0.1s;
+    outline: none;
+
+
+}
+
+.section-p1{
+    margin: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+body{
+    width: 100%;
+}
+
+
+
+/*header st*/
+
+
+#header{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 80px;
+background: rgb(229, 197, 197);
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+z-index: 999;
+position: sticky;
+top: 0;
+left: 0;
+}
+
+#navbar {
+display: flex;
+align-items: center;
+justify-content:center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    
+    }
+    
+#navbar li a {
+    text-decoration: none;
+    font-size: 700;
+    color: black;
+    transition: 0.2s ease;
+}
+
+#navbar li a:hover{
+    color: rgb(47, 119, 102);
+
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color:rgb(47, 119, 102);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: rgb(47, 119, 102);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+#hero{
+    background-image: url("img/back1.jpeg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+#hero h4{
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+#hero h1{ 
+    color: rgb(126, 85, 164);
+}
+
+#hero button{
+    background-image: url(img/pop.png);
+    background-color: transparent;
+    color: rgb(127, 12, 133);
+    border: 0;
+    padding: 30px 0px 15px 60px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+
+#feture{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feture .box{
+    width: 180px;
+    text-align: center;
+    padding: 20px 15px;
+    box-shadow: 15px 15px  34px rgb(223, 201, 201);
+    border: 1px solid cadetblue;
+    border-radius: 4px;
+    margin: 16px 0;
+}
+
+#feture .box:hover{
+    box-shadow:10px 10px  54px rgb(229, 197, 197); 
+}
+
+
+#feture .box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: rgb(1, 1, 14);
+    background-color: rgb(239, 147, 147) ;
+
+}
+
+#feture .box:nth-child(2) h6{
+
+    
+    background-color:rgb(157, 194, 136) ;
+}
+
+#feture .box:nth-child(3) h6{
+
+    
+    background-color:rgb(239, 231, 147) ;
+}
+#feture .box:nth-child(4) h6{
+
+    
+    background-color:rgb(209, 169, 235) ;
+}
+#feture .box:nth-child(5) h6{
+
+    
+    background-color:rgb(171, 213, 231) ;
+}
+
+#feture .box img{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#prod1 .pro.des i{
+    font-size: 12px;
+    color: rgb(165, 174, 30);
+}
+
+
+
+#prod1 .proco{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px ;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+#prod1 .pro{
+    width: 23%;
+    min-width: 150px;
+    padding: 20px 15px;
+    border: 0.5px solid darkgrey;
+    border-radius: 24px ;
+    position: relative;
+    box-shadow:10px 10px  30px rgb(249, 248, 248); 
+    margin: 15px 0; 
+    transition: 0.3s ease;
+}
+
+#prod1 .pro:hover{
+    box-shadow:20px 20px  30px rgb(0, 0, 0.003); 
+}
+
+#prod1 .pro img{
+    width: 100%;
+    border-radius:25px ;
+}
+
+
+#prod1 .pro .des{
+    text-align: start;
+    padding: 10px;
+}
+
+#prod1 .pro .des span{
+    color: rgb(90, 148, 32);
+    font-size: 12px;
+}
+
+#prod1 .pro .des h5{
+    padding-top: 7px;
+    color: rgb(15, 16, 16);
+    font-size: 14px;
+
+}
+
+#prod1 .pro .des i{
+    font-size: 12px;
+    color: rgb(238, 255, 5);
+}
+
+#prod1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(24, 114, 75);
+}
+
+
+
+
+#banana{
+    background-image: url("img/cleaning22.png");
+    width: 100%;
+    height:40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+#banana h4{
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+#banana h2 span{
+    color: rgba(186, 15, 15, 0.858);
+}
+
+
+
+#banana button:hover{
+    background-color: rgb(36, 130, 98);
+    color: rgb(4, 11, 17);
+}
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+}
+
+footer .coul {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 0 0 8px 0;
+}
+
+footer p{
+    font-size: 13px;
+    padding-bottom: 0 0 8px 0;
+}
+
+
+footer a{
+    font-size: 13px;
+   margin-bottom: 10px;
+   text-decoration: none;
+   color: #222;
+}
+
+
+footer.coule {
+    
+    
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+
+
+
+/*
+#prod1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: aliceblue;
+    font-weight: 500;
+    color: rgb(37, 88, 156);
+    border: 1px solid palegoldenrod;
+    position: absolute;
+    bottom: 20px;
+}
+*/
+
+
+
+
+/*
+
+#prod1{
+    text-align: center;
+}
+
+*/
+
+
+/*
+@media(screen){
+    max-width: ;;
+}
+*/
+
+
+
+/*//////////////////////////////shop page//////////////////////////////////////*/
+
+
+#shop-header{
+
+    background-image: url("img/back2.jpg");
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    height: 40vh;
+    background-size: cover;
+    flex-direction: column;
+    padding: 16px;
+
+}
+
+#shop-header h2{
+    color: aliceblue;
+    
+}
+
+#shop-header p{
+    color: rgb(255, 4, 83);
+}
+
+#shop-header h1{
+  
+    color: rgb(36, 130, 98);
+}
+
+
+
+#pag{
+    text-align: center;
+
+}
+
+#pag a{
+    background-color: rgb(229, 197, 197);
+    color: black;
+    text-decoration: none;
+    padding: 15px 20px ;
+    border-radius: 5px;
+}
+
+
+
+#protail{
+    display: flex;
+    margin-top: 10px ;
+    
+}
+
+
+/*protail .protail-img{
+    width: 20%;
+    margin-right: 50px ;
+    display: flex;
+    margin-top: 10px ;
+}*/
+
+
+#protail .protail-img{
+    width: 20%;
+    margin-right: 50px ;
+    
+}
+
+
+.subimg-g{
+    
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    margin-right: 20px ;
+    
+}
+.subimg{
+    flex-basis: 25%;
+    cursor: pointer;
+    
+}
+
+#protail .singlede{
+    width: 50%;
+    padding-top: 30px;
+    
+}
+
+#protail .singlede h4{
+    width: 50%;
+    padding: 30px 0 20px 0;
+    
+}
+#protail .singlede h2{
+    font-size: 25px;
+    
+}
+
+
+#protail .singlede select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    background-color: rgb(248, 203, 219);
+    border:  rgb(253, 169, 198);
+    
+    
+}
+
+#protail .singlede input{
+
+    width: 40px;
+    height: 40px;
+    display: block;
+    padding-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(225, 245, 244);
+    font-size: 18px;
+    border:  rgb(33, 31, 31);
+    
+}
+
+#protail .singlede input:focus{
+    outline: none;
+}
+
+#protail .singlede button{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    background-color:  rgb(225, 245, 244);
+    border: rgb(84, 84, 84);
+    color: black;
+    
+}
+
+/*  ------------------------------------------------------ */
+
+
+
+
+#shop-header2 .blog-head{
+
+    background-image: url("img/aboutback.png");
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    height: 40vh;
+    background-size: cover;
+    flex-direction: column;
+    padding: 16px;
+
+}
+
+
+
+.background-wrap{
+    position: fixed;
+    width:100% ;
+    height: 100%;
+    z-index: -1000;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+
+
+}
+
+.video-bg-elem{
+    position: absolute;
+    min-width:100%;
+    min-height: 1000%;
+    top: 0;
+    left: 0;
+
+
+}
